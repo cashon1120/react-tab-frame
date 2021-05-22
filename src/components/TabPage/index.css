@@ -1,0 +1,14 @@
+.tabUl {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.tabUl li {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: #eee;
+  cursor: pointer;
+}
+.tabUl li.active {
+  background: #fff;
+}
