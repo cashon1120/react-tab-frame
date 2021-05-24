@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
+=======
+import { Component } from 'react';
+>>>>>>> 950478c000702456d417136c05d980f349396f18
 import type { ConnectProps } from 'umi';
 import { connect } from 'umi';
 import { Tag, message } from 'antd';
@@ -43,7 +47,11 @@ class GlobalHeaderRight extends Component<GlobalHeaderRightProps> {
 
   handleNoticeClear = (title: string, key: string) => {
     const { dispatch } = this.props;
+<<<<<<< HEAD
     message.success(`${'清空了'} ${title}`);
+=======
+    message.success(`${'Emptied'} ${title}`);
+>>>>>>> 950478c000702456d417136c05d980f349396f18
 
     if (dispatch) {
       dispatch({
@@ -123,8 +131,13 @@ class GlobalHeaderRight extends Component<GlobalHeaderRightProps> {
           this.changeReadState(item as NoticeItem);
         }}
         loading={fetchingNotices}
+<<<<<<< HEAD
         clearText="清空"
         viewMoreText="查看更多"
+=======
+        clearText="Empty"
+        viewMoreText="See more"
+>>>>>>> 950478c000702456d417136c05d980f349396f18
         onClear={this.handleNoticeClear}
         onPopupVisibleChange={onNoticeVisibleChange}
         onViewMore={() => message.info('Click on view more')}
@@ -134,22 +147,37 @@ class GlobalHeaderRight extends Component<GlobalHeaderRightProps> {
           tabKey="notification"
           count={unreadMsg.notification}
           list={noticeData.notification}
+<<<<<<< HEAD
           title="通知"
           emptyText="你已查看所有通知"
+=======
+          title="Notification"
+          emptyText="You have viewed all notifications"
+>>>>>>> 950478c000702456d417136c05d980f349396f18
           showViewMore
         />
         <NoticeIcon.Tab
           tabKey="message"
           count={unreadMsg.message}
           list={noticeData.message}
+<<<<<<< HEAD
           title="消息"
           emptyText="您已读完所有消息"
+=======
+          title="Message"
+          emptyText="You have read all messages"
+>>>>>>> 950478c000702456d417136c05d980f349396f18
           showViewMore
         />
         <NoticeIcon.Tab
           tabKey="event"
+<<<<<<< HEAD
           title="待办"
           emptyText="你已完成所有待办"
+=======
+          title="To do"
+          emptyText="You have completed all to-dos"
+>>>>>>> 950478c000702456d417136c05d980f349396f18
           count={unreadMsg.event}
           list={noticeData.event}
           showViewMore
