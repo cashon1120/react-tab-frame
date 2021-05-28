@@ -12,8 +12,4 @@ export default defineConfig({
     babelPlugins: [],
     babelOptions: {},
   },
-<<<<<<< HEAD
-=======
-  webpack5: {},
->>>>>>> 950478c000702456d417136c05d980f349396f18
 });

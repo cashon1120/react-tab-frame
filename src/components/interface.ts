@@ -2,6 +2,7 @@ export interface SubPage {
   name: string
   children: any
   active?: boolean
+  closed?: boolean
 }
 
 export interface RootPage {

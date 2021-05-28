@@ -8,19 +8,12 @@ import type { ConnectState } from '@/models/connect';
 import Avatar from './AvatarDropdown';
 import HeaderSearch from '../HeaderSearch';
 import styles from './index.less';
-<<<<<<< HEAD
 import NoticeIconView from './NoticeIconView';
-=======
->>>>>>> 950478c000702456d417136c05d980f349396f18
 
 export type GlobalHeaderRightProps = {
   theme?: ProSettings['navTheme'] | 'realDark';
 } & Partial<ConnectProps> &
   Partial<ProSettings>;
-<<<<<<< HEAD
-=======
-
->>>>>>> 950478c000702456d417136c05d980f349396f18
 const ENVTagColor = {
   dev: 'orange',
   test: 'green',
@@ -39,7 +32,6 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = (props) => {
     <div className={className}>
       <HeaderSearch
         className={`${styles.action} ${styles.search}`}
-<<<<<<< HEAD
         placeholder="站内搜索"
         defaultValue="umi ui"
         options={[
@@ -47,12 +39,6 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = (props) => {
             label: <a href="https://umijs.org/zh/guide/umi-ui.html">umi ui</a>,
             value: 'umi ui',
           },
-=======
-        placeholder="Site Search"
-        defaultValue="umi ui"
-        options={[
-          { label: <a href="https://umijs.org/zh/guide/umi-ui.html">umi ui</a>, value: 'umi ui' },
->>>>>>> 950478c000702456d417136c05d980f349396f18
           {
             label: <a href="next.ant.design">Ant Design</a>,
             value: 'Ant Design',
@@ -65,20 +51,11 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = (props) => {
             label: <a href="https://prolayout.ant.design/">Pro Layout</a>,
             value: 'Pro Layout',
           },
-<<<<<<< HEAD
         ]} // onSearch={value => {
         //   //console.log('input', value);
         // }}
       />
       <Tooltip title="使用文档">
-=======
-        ]}
-        // onSearch={value => {
-        //   //console.log('input', value);
-        // }}
-      />
-      <Tooltip title="Use documentation">
->>>>>>> 950478c000702456d417136c05d980f349396f18
         <a
           style={{
             color: 'inherit',
@@ -91,12 +68,8 @@ const GlobalHeaderRight: React.SFC<GlobalHeaderRightProps> = (props) => {
           <QuestionCircleOutlined />
         </a>
       </Tooltip>
-<<<<<<< HEAD
       <NoticeIconView />
       <Avatar menu />
-=======
-      <Avatar />
->>>>>>> 950478c000702456d417136c05d980f349396f18
       {REACT_APP_ENV && (
         <span>
           <Tag color={ENVTagColor[REACT_APP_ENV]}>{REACT_APP_ENV}</Tag>

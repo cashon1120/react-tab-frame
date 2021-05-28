@@ -5,10 +5,6 @@ import proxy from './proxy';
 import routes from './routes';
 
 const { REACT_APP_ENV } = process.env;
-<<<<<<< HEAD
-=======
-
->>>>>>> 950478c000702456d417136c05d980f349396f18
 export default defineConfig({
   hash: true,
   antd: {},
@@ -43,10 +39,5 @@ export default defineConfig({
   manifest: {
     basePath: '/',
   },
-<<<<<<< HEAD
-=======
-  // 快速刷新功能 https://umijs.org/config#fastrefresh
-  fastRefresh: {},
->>>>>>> 950478c000702456d417136c05d980f349396f18
   esbuild: {},
 });

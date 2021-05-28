@@ -33,6 +33,7 @@ interface Window {
     fieldsObject: GAFieldsObject | string,
   ) => void;
   reloadAuthorized: () => void;
+  tabHistory: any
 }
 
 declare let ga: () => void;

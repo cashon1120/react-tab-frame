@@ -150,6 +150,7 @@ class Basic extends Component<BasicProps, BasicState> {
         },
       },
     ];
+    // console.log('profile/basic')
     return (
       <PageContainer>
         <Card bordered={false}>
